@@ -3,6 +3,11 @@ import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MuiDrawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
+import PersonIcon from '@mui/icons-material/Person';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import CloudUploadIcon from '@mui/icons-material/CloudUpload';
+import SourceIcon from '@mui/icons-material/Source';
+import QuizIcon from '@mui/icons-material/Quiz';
 import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import SettingsIcon from "@mui/icons-material/Settings";
@@ -121,13 +126,13 @@ export default function Sidenav() {
                 px: 2.5,
               }}
             >
-              <FactoryIcon 
+              <DashboardIcon 
                 sx={{
                   minWidth: 0,
                   mr: open ? 3 : "auto",
                   justifyContent: "center",
                 }}
-              ></FactoryIcon>
+              ></DashboardIcon>
               <ListItemText primary="Company dashboard" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
           </ListItem>
@@ -171,13 +176,13 @@ export default function Sidenav() {
                 px: 2.5,
               }}
             >
-              <FactoryIcon 
+              <PersonIcon 
                 sx={{
                   minWidth: 0,
                   mr: open ? 3 : "auto",
                   justifyContent: "center",
                 }}
-              ></FactoryIcon>
+              ></PersonIcon>
               <ListItemText primary="Internship Student" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
           </ListItem>
@@ -221,13 +226,13 @@ export default function Sidenav() {
                 px: 2.5,
               }}
             >
-              <InterpreterModeIcon
+              <CloudUploadIcon
                 sx={{
                   minWidth: 0,
                   mr: open ? 3 : "auto",
                   justifyContent: "center",
                 }}
-              ></InterpreterModeIcon>
+              ></CloudUploadIcon>
               <ListItemText primary="Upload files" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
           </ListItem>
@@ -246,14 +251,39 @@ export default function Sidenav() {
                 px: 2.5,
               }}
             >
-              <InterpreterModeIcon
+              <SourceIcon
                 sx={{
                   minWidth: 0,
                   mr: open ? 3 : "auto",
                   justifyContent: "center",
                 }}
-              ></InterpreterModeIcon>
+              ></SourceIcon>
               <ListItemText primary="Resources" sx={{ opacity: open ? 1 : 0 }} />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem
+            disablePadding
+            sx={{ display: "block" }}
+            onClick={() => {
+              navigate("/quiz");
+            }}
+          >
+            <ListItemButton
+              sx={{
+                minHeight: 48,
+                justifyContent: open ? "initial" : "center",
+                px: 2.5,
+              }}
+            >
+              <QuizIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 3 : "auto",
+                  justifyContent: "center",
+                }}
+              ></QuizIcon>
+              <ListItemText primary="Quiz" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
           </ListItem>
 

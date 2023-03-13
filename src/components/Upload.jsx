@@ -21,9 +21,9 @@ export default function Upload() {
   return (
     <>
       <Navbar />
-      <Box sx={{ display: "flex" }}height={90} className="bgcolor paddingall">
+      <Box sx={{ display: "flex" }} height={90} className="bgcolor paddingall">
         <Sidenav />
-        <Box sx={{ flexGrow: 1 }} >
+        <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
             <Grid xs={12}>
               <Grid item md={12} xs={12} className="paddingall">
@@ -64,49 +64,49 @@ export default function Upload() {
               </Grid>
             </Grid>
 
-            <Grid xs={12}>
-          <Grid item md={12} xs={12} className="paddingall">
-            <Typography variant="h5" style={{ marginBottom: 50 }}>
-              Submit Your Work
-            </Typography>
-            <Grid container md={12} xs={12} direction={"row"} spacing={3}>
-              <Grid item md={12} xs={12} alignItems={"center"}>
-                <Card
-                  variant="outlined"
-                  className="paddingall"
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    width: "100%",
-                    height: "200px",
-                  }}
-                >
-                  <Button
-                    variant="contained"
-                    style={{
-                      borderRadius: "50%",
-                      padding: "10px 50px",
-                      backgroundColor: "skyblue",
-                      height: "100%",
-                    }}
-                  >
-                    <Stack spacing={1} direction={"column"}>
-                      <DescriptionIcon
-                        fontSize={"large"}
+            {/* <Grid xs={12}>
+              <Grid item md={12} xs={12} className="paddingall">
+                <Typography variant="h5" style={{ marginBottom: 50 }}>
+                  Submit Your Work
+                </Typography>
+                <Grid container md={12} xs={12} direction={"row"} spacing={3}>
+                  <Grid item md={12} xs={12} alignItems={"center"}>
+                    <Card
+                      variant="outlined"
+                      className="paddingall"
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        width: "100%",
+                        height: "200px",
+                      }}
+                    >
+                      <Button
+                        variant="contained"
                         style={{
-                          display: "block",
-                          fontSize: "50px",
-                          width: "100%",
+                          borderRadius: "50%",
+                          padding: "10px 50px",
+                          backgroundColor: "skyblue",
+                          height: "100%",
                         }}
-                      />
-                      <Typography variant="h5">Upload</Typography>
-                    </Stack>
-                  </Button>
-                </Card>
+                      >
+                        <Stack spacing={1} direction={"column"}>
+                          <DescriptionIcon
+                            fontSize={"large"}
+                            style={{
+                              display: "block",
+                              fontSize: "50px",
+                              width: "100%",
+                            }}
+                          />
+                          <Typography variant="h5">Upload</Typography>
+                        </Stack>
+                      </Button>
+                    </Card>
+                  </Grid>
+                </Grid>
               </Grid>
-            </Grid>
-          </Grid>
-        </Grid>
+            </Grid> */}
           </Grid>
         </Box>
       </Box>

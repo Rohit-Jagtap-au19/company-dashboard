@@ -9,6 +9,7 @@ import InternshipStudent from './pages/company/InternshipStudent';
 import Interview from './pages/Interview';
 import Upload from './components/Upload';
 import Download from './components/Download';
+import Quiz from './pages/Quiz';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
       <Route exact path='/videointerview' element={<Interview/>}></Route>
       <Route exact path='/upload' element={<Upload/>}></Route>
       <Route exact path='/download' element={<Download/>}></Route>
+      <Route exact path='/quiz' element={<Quiz/>}></Route>
+
 
 
 

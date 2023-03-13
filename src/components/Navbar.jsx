@@ -190,7 +190,7 @@ export default function Navbar() {
               sx={{ display: { xs: "none", sm: "block" } }}
               marginRight="5%"
             >
-              UPLYFT
+              COMPANY
             </Typography>
             <IconButton
               size="large"

@@ -16,9 +16,9 @@ export default function Home() {
     <Box height={90}/>
     <Box sx={{ display: 'flex' }} className='bgcolor paddingall'>
     <Sidenav/>
-      <Upload/>
-      {/* <CompanyCard/> */}
-      <Download/>
+      {/* <Upload/> */}
+      <CompanyCard/>
+      {/* <Download/> */}
     <Box>
       </Box>
     </Box>
