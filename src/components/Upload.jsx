@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Grid from "@mui/material/Unstable_Grid2";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
@@ -18,6 +18,10 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 export default function Upload() {
+  const [file, setFile] = useState(null);
+  const handleFileUpload = (event) => {
+    setFile(event.target.files[0]);
+  };
   return (
     <>
       <Navbar />
@@ -50,13 +54,22 @@ export default function Upload() {
                           alignItems: "center",
                           justifyContent: "center",
                           flexDirection: "column",
-                          padding: "10px 50px",
-                          margin: "10px 0",
                           cursor: "pointer",
                         }}
                       >
                         <DescriptionIcon fontSize={"large"} />
-                        <Typography variant="h5">Upload</Typography>
+                        <Typography
+                          variant="h5"
+                          style={{
+                            display: "flex",
+                            textAlign: "center",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            width:'70%'
+                          }}
+                        >
+                          <input type="file" onChange={handleFileUpload} />
+                        </Typography>
                       </Card>
                     </Card>
                   </Grid>

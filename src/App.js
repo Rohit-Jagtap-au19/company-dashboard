@@ -10,6 +10,7 @@ import Interview from './pages/Interview';
 import Upload from './components/Upload';
 import Download from './components/Download';
 import Quiz from './pages/Quiz';
+import Calendar from './pages/Calendar';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
       <Route exact path='/upload' element={<Upload/>}></Route>
       <Route exact path='/download' element={<Download/>}></Route>
       <Route exact path='/quiz' element={<Quiz/>}></Route>
+      <Route exact path='/calendar' element={<Calendar/>}></Route>
+
 
 
 
