@@ -34,7 +34,7 @@ const baseURL = "https://api.joinuplyft.com";
       {data.map((element) => {
         return (
           
-            <Grid item xs={2} sm={4} md={4}>
+            <Grid item xs={12} sm={4} md={4} spacing={2}>
               <Card sx={{ maxWidth: 345 }}>
                 <CardActionArea>
                   <CardMedia
