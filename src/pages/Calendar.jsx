@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import Sidenav from "../components/Sidenav";
 import Navbar from "../components/Navbar";
 import 'react-calendar/dist/Calendar.css';
-import CompanyCard from "../components/CompanyCard";
 import Calendar from 'react-calendar'
 export default function Calendar_01() {
     const [value, onChange] = useState(new Date());

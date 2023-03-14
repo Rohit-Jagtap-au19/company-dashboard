@@ -2,21 +2,11 @@ import React, { useState } from "react";
 import Grid from "@mui/material/Unstable_Grid2";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
-import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
-import Button from "@material-ui/core/Button";
 import DescriptionIcon from "@mui/icons-material/Description";
-import Stack from "@mui/material/Stack";
 import Navbar from "./Navbar";
 import Sidenav from "./Sidenav";
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-}));
+
 export default function Upload() {
   const [file, setFile] = useState(null);
   const handleFileUpload = (event) => {
