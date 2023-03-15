@@ -3,7 +3,8 @@ import Box from '@mui/material/Box';
 import Navbar from '../../components/Navbar';
 import Sidenav from '../../components/Sidenav';
 import Internship_Stats from '../../components/Internship_Stats';
-import All_Program from '../../components/All_Program';
+import Data_export from '../../components/Data_export';
+import Data_table from '../../components/Data_table';
 
 export default function CompanyInternship() {
   return (
@@ -14,7 +15,9 @@ export default function CompanyInternship() {
     <Sidenav/>
     <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
     <Internship_Stats/>
-    <All_Program/>
+    <Data_table/>
+    <Box height={40}/>
+    <Data_export/>
       </Box>
     </Box>
     </>
