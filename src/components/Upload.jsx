@@ -4,6 +4,8 @@ import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import Box from "@mui/material/Box";
 import DescriptionIcon from "@mui/icons-material/Description";
+import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
 import Navbar from "./Navbar";
 import Sidenav from "./Sidenav";
 
@@ -20,6 +22,7 @@ export default function Upload() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
             <Grid xs={12}>
+              <Box height={90} />
               <Grid item md={12} xs={12} className="paddingall">
                 <Typography variant="h5" style={{ marginBottom: 50 }}>
                   Submit Your Work
@@ -55,7 +58,7 @@ export default function Upload() {
                             textAlign: "center",
                             justifyContent: "center",
                             alignItems: "center",
-                            width:'70%'
+                            width: "70%",
                           }}
                         >
                           <input type="file" onChange={handleFileUpload} />
@@ -67,7 +70,7 @@ export default function Upload() {
               </Grid>
             </Grid>
 
-            {/* <Grid xs={12}>
+            <Grid xs={12}>
               <Grid item md={12} xs={12} className="paddingall">
                 <Typography variant="h5" style={{ marginBottom: 50 }}>
                   Submit Your Work
@@ -88,7 +91,7 @@ export default function Upload() {
                         variant="contained"
                         style={{
                           borderRadius: "50%",
-                          padding: "10px 50px",
+                          padding: "20px 20px",
                           backgroundColor: "skyblue",
                           height: "100%",
                         }}
@@ -102,14 +105,16 @@ export default function Upload() {
                               width: "100%",
                             }}
                           />
-                          <Typography variant="h5">Upload</Typography>
+                          <Typography variant="h5" style={{marginLeft:'10px'}}>
+                            <input type="file" onChange={handleFileUpload} />
+                          </Typography>
                         </Stack>
                       </Button>
                     </Card>
                   </Grid>
                 </Grid>
               </Grid>
-            </Grid> */}
+            </Grid>
           </Grid>
         </Box>
       </Box>

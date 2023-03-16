@@ -16,11 +16,12 @@ export default function Download() {
       <Box sx={{ display: "flex" }} className="bgcolor paddingall">
         <Sidenav />
         <Box>
+        <Box height={90}/>
           <Card className="paddingall">
             <Typography variant="h5" style={{ marginBottom: 50 }}>
               Resources to help you with the task
             </Typography>
-            <Grid container md={12} xs={12} direction={"row"} spacing={3}>
+            <Grid container md={12} xs={12} direction={"row"} spacing={2}>
               <Grid item md={6} xs={12} alignItems={"center"}>
                 <Card variant="outlined" className="paddingall">
                   <PictureAsPdfIcon fontSize={"large"} />

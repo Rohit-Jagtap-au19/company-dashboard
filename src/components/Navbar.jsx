@@ -29,9 +29,9 @@ const AppBar = styled(
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
+  backgroundColor: alpha(theme.palette.common.black, 0.15),
   "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
+    backgroundColor: alpha(theme.palette.common.black, 0.25),
   },
   marginRight: theme.spacing(2),
   marginLeft: 0,
@@ -65,6 +65,14 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
+
+const Navstyling = {
+  navbar: {
+    backgroundColor: "transparent",
+    color: "black",
+    padding: "0px 250px",
+  },
+};
 
 export default function Navbar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -179,7 +187,8 @@ export default function Navbar() {
       <AppBar
         position="fixed"
         elevation={0}
-        sx={{ backgroundColor: "#132c1f", color: "#fff" }}
+        className="nav"
+        sx={Navstyling.navbar }
       >
         <Container maxWidth="100vw">
           <Toolbar>
